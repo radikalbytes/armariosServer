@@ -58,7 +58,7 @@ def servidoractivo():
     httpd.server_close()
     print time.asctime(), "Server Stops - %s:%s" % (HOST_NAME, PORT_NUMBER)
     subproceso_led.stop()
-
+#Thread heartbreak led rojo
 def heartbreak():
     led = port.STATUS_LED
     gpio.init()
@@ -155,6 +155,7 @@ if __name__ == '__main__':
     httpd = server_class((HOST_NAME, PORT_NUMBER), MyHandler)
     #Arranque Thread del servidor
     print time.asctime(), "Server Starts - %s:%s" % (HOST_NAME, PORT_NUMBER)
+    #Carga hilos, servidor http y heartbreak
     subproceso.start()
     subproceso_led.start()
     #Programa principal
