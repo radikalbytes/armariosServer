@@ -3,16 +3,12 @@
 Programa servidor http de datos CSV para monitorizacion
 de temperatura, humedad y punto de rocio de armarios 
 electricos industriales.
-
 El programa server.py se carga automáticamente en el arranque de la maquina Linux.
-
 Estará operativo en el momento en el que el led rojo de la placa efectue la 
 simulacion de un latido de corazon.
 
-
-# conexion por SSH:
-    1.  ssh root@<IP>
-    2.  password: gkn
+conexion por SSH: ssh root@<IP>
+                  password: gkn
 En la consola:
               $ configura    --- Inicia el programa de configuracion
                                   -Numero de muestras a enviar
