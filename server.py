@@ -23,7 +23,7 @@ from meteocalc import Temp, dew_point
 import itertools
 
 #Configuracion IP y puerto del servidor
-HOST_NAME = '192.168.0.55' # Direccio IP del host
+HOST_NAME = '10.176.125.90' # Direccio IP del host
 PORT_NUMBER = 80 # Puerto HTTP
 #Variables globales
 muestras = 0
